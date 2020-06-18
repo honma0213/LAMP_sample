@@ -1,6 +1,6 @@
 <?php
 $dsn = 'mysql:dbname=mysql;host=127.0.0.1;';
-$user = 'honma';
+$user = 'root';
 $password = 'honma0213';
 try {
     $dbh = new PDO($dsn, $user, $password);
