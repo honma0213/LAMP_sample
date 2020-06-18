@@ -5,7 +5,7 @@ $password = 'honma0213';
 try {
     $dbh = new PDO($dsn, $user, $password);
 
-    $sql = "select * from user"
+    $sql = "select * from user";
     $result = $dbh->query($sql);
 
     echo "接続成功\n";
