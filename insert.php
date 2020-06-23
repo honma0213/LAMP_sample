@@ -14,7 +14,7 @@ try {
     $stmt = $dbh->prepare($sql);
     $parms = array(':id' => $id, ':name' => $name, ':age' => $age);
 
-    $result = $dbh->query($sql);
+    $stmt->execute($params);
 
     header('Location: index.php?fg=1'):
     echo "接続成功\n";
